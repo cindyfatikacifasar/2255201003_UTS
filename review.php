@@ -1,42 +1,40 @@
 <?php
-$doge_meme = ["top_text" => "Such Python", "bottom_text" => "Very language. Wow.", "img" => "very-cute-dog.jpg", "description" => "An adorable doge looks confused."];
+$string_var = "Check it out";
+echo strtoupper($string_var) . "!\n";
 
-$doge_meme["new value"] = "Woah I'm new";
+echo ceil(8.873);
+echo "\n";
+  
+echo pi();
+echo "\n";
 
-echo "\n" . $doge_meme["new value"];
+echo str_pad("PHP", 30, "*^*-", STR_PAD_BOTH);
+echo "\n";
 
-array_push($doge_meme, "just an example");
+echo getrandmax();
+echo "\n";
 
-echo "\n" . $doge_meme[0] . "\n";
+echo rand();
+echo "\n";
 
-unset($doge_meme[0]);
-unset($doge_meme["new value"]);
+echo rand(1, 52);
+echo "\n";
 
-$doge_meme["description"] = "A wonderful dog picture with a brand new description.";
+echo abs(-1287);
+echo "\n";
 
-function createMeme ($meme) 
-{
-  $meme["top_text"] = "Much PHP";
-  $meme["bottom_text"] = "Very programming. Wow.";
-  return $meme;
-}  
+echo round(8723.999);
+echo "\n";
 
-$php_doge = createMeme($doge_meme);
+echo substr_count($string_var, " ");
+echo "\n";
 
-print_r($doge_meme);
+echo strrev("\n.pu ti peeK .taerg gniod er'uoY");
 
-print_r($php_doge);
+echo strtolower("SOON, tHiS WILL Look NoRmAL.\n");
 
-function fixMeme (&$meme) 
-{
-  $meme["top_text"] = "I can haz";
-  $meme["bottom_text"] = "PHP, plz?";
-} 
+echo str_repeat("There's no place like home.\n", 3);
 
-$lame_meme = ["top_text" => "i don't know", "bottom_text" => "i can't think of anything", "img" => "very-fat-cat.jpg", "description" => "An very fat cat looks happy."];
-
-print_r($lame_meme);
-
-fixMeme ($lame_meme);
-
-print_r($lame_meme);
+echo gettype($string_var);
+echo "\n";
+echo var_dump($string_var);
